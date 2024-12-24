@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Title Section -->
+        <div class="title-container">
+            <h1 class="title">Basket Ball Score Counter</h1>
+        </div>
+        
+        <div class="container">
+            <!-- Home Section -->
+            <div class="scoreboard">
+                <h3 class="team-label">HOME</h3>
+                <div class="score-box">
+                    <p id="home-score">0</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="updateScoreH1()">+1</button>
+                    <button onclick="updateScoreH2()">+2</button>
+                    <button onclick="updateScoreH3()">+3</button>
+                </div>
+            </div>
+            <!-- Guest Section -->
+            <div class="scoreboard">
+                <h3 class="team-label">GUEST</h3>
+                <div class="score-box">
+                    <p id="guest-score">0</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="updateScoreG1()">+1</button>
+                    <button onclick="updateScoreG2()">+2</button>
+                    <button onclick="updateScoreG3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <!-- Clear Scores Button -->
+        <div class="clear-score-container">
+            <button onclick="clearScores()">Clear Scores</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
